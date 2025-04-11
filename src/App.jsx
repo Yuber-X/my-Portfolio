@@ -1,6 +1,7 @@
 import './App.css';
 import { Navbar } from '../src/components/NavBar.jsx';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
 
@@ -12,3 +13,5 @@ function App() {
 }
 
 export default App
+
+
