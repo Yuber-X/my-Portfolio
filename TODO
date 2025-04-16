@@ -1,19 +1,21 @@
 
 Todo:
-  ☐ NavBar 
+  ✔ NavBar @started(25-04-14 09:13) @done(25-04-14 09:13) @lasted(13s)
 
-  ☐ Main Banner
+  ✔ LoadingScreen @started(25-04-14 09:13) @done(25-04-14 09:14) @lasted(1m)
 
-  ☐ Skills Section
+  ☐ Sections @started(25-04-14 11:17)
 
-  ☐ Slider
+      ☐ Home @started(25-04-14 11:17)
 
-  ☐ Projects' Section & Tabs
+      ☐ About
 
-  ☐ Contact Form
+      ☐ Projects
 
-  ☐ Newsletter Suscribe 
+      ☐ Contact
+
+  ☐ Email.JS
 
   ☐ Footer
 
-  ☐ Animations
+  ☐ Re-Desing
