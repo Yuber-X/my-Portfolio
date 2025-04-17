@@ -4,18 +4,20 @@ Todo:
 
   ✔ LoadingScreen @started(25-04-14 09:13) @done(25-04-14 09:14) @lasted(1m)
 
-  ☐ Sections @started(25-04-14 11:17)
+  ✔ Sections @started(25-04-14 11:17) @done(25-04-17 14:26) @lasted(3d3h9m43s)
 
-      ☐ Home @started(25-04-14 11:17)
+      ✔ Home @started(25-04-14 11:17) @done(25-04-15 22:22) @lasted(1d11h5m6s)
 
-      ☐ About
+      ✔ About @started(25-04-17 13:48) @done(25-04-17 14:12) @lasted(24m31s)
 
-      ☐ Projects
+      ✔ Projects @started(25-04-17 14:12) @done(25-04-17 14:12) @lasted(32s)
 
-      ☐ Contact
+      ✔ Contact @started(25-04-17 14:12) @done(25-04-17 14:12) @lasted(33s)
 
-  ☐ Email.JS
-
-  ☐ Footer
+  ✔ Email.JS @started(25-04-17 14:27) @done(25-04-17 14:27) @lasted(2s)
 
   ☐ Re-Desing
+    ☐ My Words
+    ☐ My Links
+    ☐ My Styles
+    ☐ Refill
