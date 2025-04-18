@@ -1,4 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { useRef } from "react";
+import colorSharp from "../../assets/img/color-sharp.png";
 
 export const About = () => {
     const frontendSkills = [
@@ -15,11 +17,11 @@ export const About = () => {
         "Git & GitHub"
     ];
     const backendSkills = [
-        "Node.js",
-        "Python",
         "MongoDB",
         "MySQL",
         "PostgreSQL",
+        "Node.js",
+        "Python",
         "C++",
         "C#",
         "JQuery",
@@ -28,15 +30,29 @@ export const About = () => {
         "Axios",
         "Jest",
         "Jasmine",
-        "Postman & ThunderClient",
-        "JSON & XML",
+        "Postman", 
+        "ThunderClient",
+        "JSON", "XML",
     ]
+    const bgRef = useRef(null);
 
     return (
         <section
           id="about"
           className="min-h-screen flex items-center justify-center py-20"
         >
+                <div
+                  ref={bgRef}
+                  className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none z-0"
+                  style={{
+                    backgroundImage: `url(${colorSharp})`,
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPosition: "center 0px",
+                    transition: "background-position 0.1s linear",
+                  }}
+                />
+
           <RevealOnScroll>
             <div className="max-w-3xl mx-auto px-4">
               <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
@@ -46,8 +62,7 @@ export const About = () => {
     
               <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
                 <p className="text-gray-300 mb-6">
-                  Passionate developer with expertise in building scalable web
-                  applications and creating innovative solutions.
+                 Passionate developer with some experience in creating web applications and optimal solutions.
                 </p>
     
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -90,37 +105,34 @@ export const About = () => {
                   <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
                   <ul className="list-disc list-inside text-gray-300 space-y-2">
                     <li>
-                      <strong> B.S. in Computer Science </strong> - XYZ University
-                      (2016-2020)
+                      <strong>Community Higher Technical Institute</strong> - ITSC Software Development
+                      (2019-2023)
                     </li>
                     <li>
-                      Relevant Coursework: Data Structures, Web Development, Cloud
-                      Computing...
+                      <strong>SoyHery Bootcamp</strong> - Data Structures, Web Development, FullStack (2023-2024)
                     </li>
                   </ul>
                 </div>
                 <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+                  <h3 className="text-xl font-bold mb-4"> 💼 Experiencia de Trabajo </h3>
                   <div className="space-y-4 text-gray-300">
                     <div>
                       <h4 className="font-semibold">
                         {" "}
-                        Software Engineer at ABC Corp (2020 - Present){" "}
+                        Yuber.Freelancer (2023 - Present){" "}
                       </h4>
                       <p>
-                        Developed and maintained microservices for cloud-based
-                        applications.
+                       I have developed websites and projects for both clients and myself, with availability for code maintenance.
                       </p>
                     </div>
     
                     <div>
                       <h4 className="font-semibold">
                         {" "}
-                        Intern at DEF Startups (2019){" "}
+                        Health Insurance Typist (2022-2023){" "}
                       </h4>
                       <p>
-                        Assisted in building front-end components and integration
-                        REST APIs
+                        Typing highly confidential documents at the optimal speed for delivery.
                       </p>
                     </div>
                   </div>
@@ -128,6 +140,7 @@ export const About = () => {
               </div>
             </div>
           </RevealOnScroll>
+          {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
         </section>
       );
     };

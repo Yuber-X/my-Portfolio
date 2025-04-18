@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
 import emailjs from "emailjs-com";
+import colorSharp from "../../assets/img/color-sharp.png"
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,11 +27,27 @@ export const Contact = () => {
       .catch(() => alert("Oops! Something went wrong. Please try again."));
   };
 
+  const bgRef = useRef(null);
+
   return (
     <section
       id="contact"
       className="min-h-screen flex items-center justify-center py-20"
     >
+
+                      <div
+                        ref={bgRef}
+                        className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none z-0"
+                        style={{
+                          backgroundImage: `url(${colorSharp})`,
+                          backgroundSize: "cover",
+                          backgroundRepeat: "no-repeat",
+                          backgroundPosition: "center 0px",
+                          transition: "background-position 0.1s linear",
+                        }}
+                      />
+                      
+
       <RevealOnScroll>
         <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">

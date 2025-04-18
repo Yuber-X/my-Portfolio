@@ -41,6 +41,13 @@ body{
   }
 }
 
+.blinking-cursor {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #0ff;
+  animation: blink 1s infinite;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -52,71 +59,71 @@ body{
   transform: translateY(0);
 }
 
-/* :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/************Banner************/
+/* .banner {
+  margin-top: 0;
+  padding: 16.25rem 0 6.25rem 0;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+*/
+.background-parallax {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0; /* No más negativo */
+  background-image: url('./assets/img/banner-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0px;
+  pointer-events: none;
+  transition: background-position 0.1s linear;
+  opacity: 0.2; /* Transparente para no molestar al contenido */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.banner img {
+  animation: updown 3s linear infinite;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes updown {
+  0% {
+      transform: translateY(-20px);
   }
-  a:hover {
-    color: #747bff;
+  50% {
+      transform: translateY(20px);
   }
-  button {
-    background-color: #f9f9f9;
+  100% {
+      transform: translateY(-20px);
   }
-} */
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+
+/*************About*************/
+
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/************Projects***********/
+
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
