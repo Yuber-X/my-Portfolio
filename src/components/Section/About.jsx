@@ -114,7 +114,7 @@ export const About = () => {
                   </ul>
                 </div>
                 <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4"> 💼 Experiencia de Trabajo </h3>
+                  <h3 className="text-xl font-bold mb-4"> 💼 Work Experiences </h3>
                   <div className="space-y-4 text-gray-300">
                     <div>
                       <h4 className="font-semibold">

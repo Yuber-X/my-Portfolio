@@ -13,6 +13,13 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Asegurando de que funcione el .env y el emailjs
+
+    // console.log("Service ID:", import.meta.env.VITE_SERVICE_ID);
+    // console.log("Template ID:", import.meta.env.VITE_TEMPLATE_ID);
+    // console.log("Public Key:", import.meta.env.VITE_PUBLIC_KEY);
+
+
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -34,8 +41,8 @@ export const Contact = () => {
       id="contact"
       className="min-h-screen flex items-center justify-center py-20"
     >
-
-                      <div
+                         {/* Poniendo el fondo */}
+                      <div 
                         ref={bgRef}
                         className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none z-0"
                         style={{

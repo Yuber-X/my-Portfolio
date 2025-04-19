@@ -13,6 +13,7 @@ export const Home = () => {
   const pauseTime = 2000; // Tiempo de pausa al terminar de escribir una palabra
   const bgRef = useRef(null); // Que renuncie a todo fondo
 
+  // MAQUINA DE ESCRIBIR EFECTO
   useEffect(() => {
     const ticker = setTimeout(() => {
       handleTyping();
@@ -46,10 +47,10 @@ export const Home = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-black text-white relative banner">
             
-      {/* Fondo dentro del home */}
+      {/* FONDO PARALLAX dentro del home */}
       <div
         ref={bgRef}
-        className="absolute top-0 left-0 w-full h-full opacity-25 pointer-events-none z-0"
+        className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none z-0 bg-fixed"
         style={{
           backgroundImage: `url(${bannerBg})`,
           backgroundSize: "cover",
@@ -59,14 +60,14 @@ export const Home = () => {
         }}
       />
 
-      {/* Maquina de Script */}
+
       <TrackVisibility>
         {({ isVisible }) => (
 
           <div className={`text-center px-4 z-10 transition-all duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
-            <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-700 bg-clip-text text-transparent">
-                Hi! I'm Yuber <br />
-              <span className="text-white underline decoration-rose-700">{text}</span>
+            <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                Hi! I'm Yuber<br />
+              <span className="text-white underline decoration-blue-500">{text}</span>{/* Maquina de Script */}
               <span className="blinking-cursor">|</span>
             </h1>
 
@@ -93,6 +94,7 @@ export const Home = () => {
           </div>
         )}
       </TrackVisibility>
+      {/* Image flotante */}
       <TrackVisibility>
   {({ isVisible }) => (
     <div className={`transition-opacity duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
