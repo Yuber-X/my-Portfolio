@@ -55,8 +55,7 @@ export const Home = () => {
           backgroundImage: `url(${bannerBg})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "center 0px",
-          transition: "background-position 0.1s linear",
+          backgroundPosition: "center",
         }}
       />
 
@@ -64,7 +63,7 @@ export const Home = () => {
       <TrackVisibility>
         {({ isVisible }) => (
 
-          <div className={`text-center px-4 z-10 transition-all duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
+          <div className={`text-center z-10 transition-all duration-700 px-4 sm:px-6 md:px-8 ${isVisible ? "opacity-100" : "opacity-0"}`}>
             <h1 className="text-4xl sm:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Hi! I'm Yuber<br />
               <span className="text-white underline decoration-blue-500">{text}</span>{/* Maquina de Script */}
@@ -101,7 +100,7 @@ export const Home = () => {
       <img
         src={headerImg}
         alt="Header Img"
-        className="w-full max-w-xs sm:max-w-md md:max-w-lg animate-floating" // agregamos una clase tailwind + custom
+        className="hidden sm:block w-full max-w-xs sm:max-w-md md:max-w-lg animate-floating" // agregamos una clase tailwind + custom
       />
     </div>
   )}

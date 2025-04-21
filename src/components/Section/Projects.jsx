@@ -11,17 +11,18 @@ export const Projects = () => {
       id="projects"
       className="min-h-screen flex items-center justify-center py-20"
     >
-                      <div
-                        ref={bgRef}
-                        className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none z-0"
-                        style={{
-                          backgroundImage: `url(${colorSharp})`,
-                          backgroundSize: "cover",
-                          backgroundRepeat: "no-repeat",
-                          backgroundPosition: "center 0px",
-                          transition: "background-position 0.1s linear",
-                        }}
-                      />
+    <div
+     ref={bgRef}
+     className="absolute top-0 left-0 w-full h-full opacity-20 pointer-events-none z-0"
+     style =
+     {{
+      backgroundImage: `url(${colorSharp})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center 0px",
+      transition: "background-position 0.1s linear",
+     }}
+    />
 
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
@@ -31,9 +32,9 @@ export const Projects = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-              <h3 className="text-xl font-bold mb-2"> Punto de Venta | PV-300</h3>
+              <h3 className="text-xl font-bold mb-2"> Point of Sale | PV-300</h3>
               <p className="text-gray-400 mb-4">
-                Sistema de Inventario y Venta unicamente para el administrador, enfocado en su simplicidad. 
+                Inventory and Sales System for the administrator only, focused on simplicity. 
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["C#", "WindowsForm", "MySQL"].map((tech, key) => (
@@ -65,10 +66,11 @@ export const Projects = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Página de Evento | Rock & EDM Festival</h3>
+              <h3 className="text-xl font-bold mb-2">Event Page | Rock & EDM Festival</h3>
               <p className="text-gray-400 mb-4">
-                Pagina enfocada en protagonizar un evento esperado.
-                Se enfatizó que solo mostrara información, pero a la vez sea atractivo visualmente con colores cálidos.
+                The page focused on highlighting a highly anticipated event. 
+                The emphasis was on providing information only, 
+                while also being visually appealing with warm colors.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["PHP", "Gulp", "Bootstrap", "Jasmine"].map((tech, key) => (
@@ -104,10 +106,11 @@ export const Projects = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Página de Ventas | GuitarLa</h3>
+              <h3 className="text-xl font-bold mb-2">Guitar Sales Page | GuitarLa</h3>
               <p className="text-gray-400 mb-4">
-                Pagina de Prueba creada con la finalidad de probar React.js.
-                En su creación, preferí darle un toque llamativo y digno a una de mis hobbies favoritos.
+                Test page created to test React.js. 
+                When creating it, I decided to give a 
+                striking and dignified touch to one of my favorite hobbies.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "TypeScript",].map(
@@ -145,9 +148,9 @@ export const Projects = () => {
               transition-all
             "
             >
-              <h3 className="text-xl font-bold mb-2">Página de Blogs | BlogDeCafe</h3>
+              <h3 className="text-xl font-bold mb-2">Blogs Page | BlogDeCafe</h3>
               <p className="text-gray-400 mb-4">
-                 Pagina de blogs editable y escalable. 
+                Editable and scalable blog page.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["PHP", "Gulp", "Bootstrap"].map((tech, key) => (
